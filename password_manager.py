@@ -7,6 +7,9 @@ from cryptography.fernet import Fernet
 
 write_key()"""
 
+# the fernet library is used to encrypt and decrypt the passwords but doesn't accept custom keys
+# so maybe as a future improvement we can use another library that allows custom keys
+
 def load_key():
     file = open("key.key",'rb')
     key = file.read()
